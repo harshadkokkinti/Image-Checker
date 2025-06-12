@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+image-quality
+requests
+pillow

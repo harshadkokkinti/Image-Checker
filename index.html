@@ -12,76 +12,78 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background-color: #ffffff;
-            color: #1f2937;
-            line-height: 1.5;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #000000;
+            line-height: 1.4;
+            font-size: 14px;
         }
 
         .container {
-            max-width: 414px;
+            max-width: 375px;
             margin: 0 auto;
-            padding: 16px;
-            background-color: #ffffff;
+            padding: 20px 16px;
+            background-color: #f5f5f5;
         }
 
         .header {
-            text-align: left;
-            margin-bottom: 24px;
+            text-align: center;
+            margin-bottom: 32px;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 8px;
-            margin-bottom: 4px;
+            justify-content: center;
+            gap: 4px;
+            margin-bottom: 8px;
         }
 
         .logo-circle {
-            width: 32px;
-            height: 32px;
-            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #4285f4 0%, #34a853 50%, #ea4335 75%, #fbbc05 100%);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
-            font-weight: 700;
-            font-size: 16px;
+            font-weight: 600;
+            font-size: 20px;
         }
 
         .logo-text {
-            font-size: 24px;
-            font-weight: 700;
-            color: #1f2937;
+            font-size: 32px;
+            font-weight: 300;
+            color: #000000;
         }
 
         .subtitle {
-            color: #6b7280;
-            font-size: 14px;
+            color: #666666;
+            font-size: 16px;
             font-weight: 500;
-            margin-bottom: 2px;
+            margin-bottom: 4px;
         }
 
         .tagline {
-            color: #9ca3af;
-            font-size: 12px;
+            color: #999999;
+            font-size: 14px;
             font-weight: 400;
         }
 
-        .restaurant-card {
-            background: #f9fafb;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 16px;
-            border: 1px solid #e5e7eb;
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
         .restaurant-name {
-            font-size: 18px;
-            font-weight: 700;
-            color: #1f2937;
-            margin-bottom: 8px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 12px;
         }
 
         .rating-row {
@@ -92,46 +94,39 @@
         }
 
         .rating-number {
-            font-weight: 700;
+            font-weight: 600;
             font-size: 16px;
-            color: #1f2937;
+            color: #000000;
         }
 
         .stars {
-            color: #fbbf24;
+            color: #ffb400;
             font-size: 16px;
         }
 
         .rating-details {
-            color: #6b7280;
+            color: #666666;
             font-size: 14px;
+            margin-left: 4px;
         }
 
         .restaurant-address {
-            color: #6b7280;
-            font-size: 12px;
-            line-height: 1.4;
+            color: #666666;
+            font-size: 13px;
+            line-height: 1.3;
         }
 
-        .analysis-card {
-            background: #ffffff;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 16px;
-            border: 1px solid #e5e7eb;
-        }
-
-        .analysis-title {
+        .section-title {
             font-size: 16px;
             font-weight: 600;
-            color: #1f2937;
+            color: #000000;
             margin-bottom: 16px;
         }
 
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 16px;
+            gap: 20px;
             text-align: center;
         }
 
@@ -142,68 +137,54 @@
         }
 
         .stat-label {
-            color: #6b7280;
+            color: #666666;
             font-size: 12px;
-            font-weight: 500;
-            margin-bottom: 4px;
+            font-weight: 400;
+            margin-bottom: 8px;
         }
 
         .stat-number {
-            font-size: 24px;
-            font-weight: 700;
-            color: #1f2937;
+            font-size: 32px;
+            font-weight: 600;
+            color: #000000;
         }
 
-        .attention-card {
-            background: #ffffff;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 16px;
-            border: 1px solid #e5e7eb;
-        }
-
-        .attention-header {
+        .section-header {
             display: flex;
             align-items: center;
             justify-content: space-between;
             margin-bottom: 16px;
         }
 
-        .attention-title-row {
+        .section-header-left {
             display: flex;
             align-items: center;
             gap: 8px;
         }
 
-        .warning-icon {
+        .section-icon {
             font-size: 16px;
         }
 
-        .attention-title {
-            font-size: 16px;
-            font-weight: 600;
-            color: #1f2937;
-        }
-
-        .top-complaints {
-            color: #6b7280;
+        .section-subtitle {
+            color: #666666;
             font-size: 12px;
-            font-weight: 500;
+            font-weight: 400;
         }
 
         .issue-item {
-            background: #fef2f2;
+            background: #fff5f5;
             border: 1px solid #fecaca;
-            border-radius: 6px;
-            padding: 12px;
-            margin-bottom: 8px;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
         }
 
         .issue-header {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            margin-bottom: 6px;
+            margin-bottom: 8px;
         }
 
         .issue-title {
@@ -211,128 +192,53 @@
             font-size: 14px;
             color: #dc2626;
             flex: 1;
+            margin-right: 8px;
         }
 
         .mention-badge {
             background: #fecaca;
             color: #dc2626;
-            padding: 2px 8px;
+            padding: 4px 8px;
             border-radius: 12px;
             font-size: 10px;
             font-weight: 500;
             white-space: nowrap;
-            margin-left: 8px;
         }
 
         .issue-description {
-            color: #6b7280;
+            color: #666666;
             font-size: 12px;
             line-height: 1.4;
-        }
-
-        .positive-card {
-            background: #ffffff;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 16px;
-            border: 1px solid #e5e7eb;
-        }
-
-        .positive-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 16px;
-        }
-
-        .positive-title-row {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .positive-icon {
-            font-size: 16px;
-        }
-
-        .positive-main-title {
-            font-size: 16px;
-            font-weight: 600;
-            color: #1f2937;
-        }
-
-        .top-praises {
-            color: #6b7280;
-            font-size: 12px;
-            font-weight: 500;
         }
 
         .positive-item {
             background: #f0fdf4;
             border: 1px solid #bbf7d0;
-            border-radius: 6px;
-            padding: 12px;
-            margin-bottom: 8px;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
         }
 
-        .positive-item-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 6px;
-        }
-
-        .positive-item-title {
+        .positive-title {
             font-weight: 600;
             font-size: 14px;
             color: #16a34a;
             flex: 1;
+            margin-right: 8px;
         }
 
         .positive-badge {
             background: #bbf7d0;
             color: #16a34a;
-            padding: 2px 8px;
+            padding: 4px 8px;
             border-radius: 12px;
             font-size: 10px;
             font-weight: 500;
             white-space: nowrap;
-            margin-left: 8px;
-        }
-
-        .positive-description {
-            color: #6b7280;
-            font-size: 12px;
-            line-height: 1.4;
-        }
-
-        .competition-card {
-            background: #ffffff;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 16px;
-            border: 1px solid #e5e7eb;
-        }
-
-        .competition-header {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-bottom: 16px;
-        }
-
-        .search-icon {
-            font-size: 16px;
-        }
-
-        .competition-title {
-            font-size: 16px;
-            font-weight: 600;
-            color: #1f2937;
         }
 
         .competitor-item {
-            padding: 12px 0;
+            padding: 16px 0;
             border-bottom: 1px solid #f3f4f6;
         }
 
@@ -344,50 +250,25 @@
         .competitor-name {
             font-weight: 600;
             font-size: 14px;
-            color: #1f2937;
-            margin-bottom: 4px;
+            color: #000000;
+            margin-bottom: 6px;
         }
 
         .competitor-rating {
             display: flex;
             align-items: center;
             gap: 8px;
-            margin-bottom: 4px;
+            margin-bottom: 6px;
         }
 
         .competitor-address {
-            color: #6b7280;
+            color: #666666;
             font-size: 12px;
-            line-height: 1.4;
-        }
-
-        .reviews-card {
-            background: #ffffff;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 16px;
-            border: 1px solid #e5e7eb;
-        }
-
-        .reviews-header {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-bottom: 16px;
-        }
-
-        .star-icon {
-            font-size: 16px;
-        }
-
-        .reviews-title {
-            font-size: 16px;
-            font-weight: 600;
-            color: #1f2937;
+            line-height: 1.3;
         }
 
         .review-item {
-            padding: 12px 0;
+            padding: 16px 0;
             border-bottom: 1px solid #f3f4f6;
         }
 
@@ -400,86 +281,86 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 6px;
+            margin-bottom: 8px;
         }
 
         .reviewer-name {
             font-weight: 600;
             font-size: 14px;
-            color: #1f2937;
+            color: #000000;
         }
 
         .review-meta {
             display: flex;
             align-items: center;
-            gap: 4px;
+            gap: 6px;
         }
 
         .review-stars {
-            color: #fbbf24;
+            color: #ffb400;
             font-size: 12px;
         }
 
         .review-date {
-            color: #9ca3af;
+            color: #999999;
             font-size: 11px;
         }
 
         .review-text {
-            color: #6b7280;
+            color: #666666;
             font-size: 12px;
             line-height: 1.4;
         }
 
         .cta-section {
-            background: #1f2937;
-            border-radius: 8px;
-            padding: 20px;
+            background: #1a1a1a;
+            border-radius: 12px;
+            padding: 24px;
             text-align: center;
-            margin-bottom: 16px;
+            margin-bottom: 20px;
         }
 
         .cta-title {
             font-size: 18px;
-            font-weight: 700;
+            font-weight: 600;
             color: #ffffff;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
         }
 
         .cta-description {
-            color: #d1d5db;
+            color: #cccccc;
             font-size: 14px;
-            line-height: 1.5;
-            margin-bottom: 16px;
+            line-height: 1.4;
+            margin-bottom: 20px;
         }
 
         .cta-subtitle {
             font-size: 16px;
             font-weight: 600;
             color: #ffffff;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
         }
 
         .cta-text {
-            color: #d1d5db;
+            color: #cccccc;
             font-size: 14px;
-            line-height: 1.5;
-            margin-bottom: 16px;
+            line-height: 1.4;
+            margin-bottom: 20px;
         }
 
         .cta-final {
             color: #ffffff;
             font-size: 14px;
             font-weight: 500;
-            margin-bottom: 16px;
+            margin-bottom: 20px;
         }
 
         .cta-button {
-            background: #3b82f6;
+            background: #4285f4;
             color: white;
-            padding: 12px 24px;
+            padding: 14px 24px;
             border: none;
-            border-radius: 6px;
+            border-radius: 8px;
             font-weight: 600;
             font-size: 14px;
             cursor: pointer;
@@ -488,13 +369,13 @@
 
         .footer {
             text-align: center;
-            color: #6b7280;
+            color: #666666;
             font-size: 12px;
             line-height: 1.5;
         }
 
         .footer-line {
-            margin-bottom: 2px;
+            margin-bottom: 4px;
         }
     </style>
 </head>
@@ -511,7 +392,7 @@
         </div>
 
         <!-- Restaurant Card -->
-        <div class="restaurant-card">
+        <div class="card">
             <h2 class="restaurant-name">Coffee King</h2>
             <div class="rating-row">
                 <span class="rating-number">4.2</span>
@@ -524,8 +405,8 @@
         </div>
 
         <!-- Analysis Stats -->
-        <div class="analysis-card">
-            <h3 class="analysis-title">Analysis of recent 100 reviews</h3>
+        <div class="card">
+            <h3 class="section-title">Analysis of recent 100 reviews</h3>
             <div class="stats-grid">
                 <div class="stat-item">
                     <div class="stat-label">Avg. rating</div>
@@ -543,13 +424,13 @@
         </div>
 
         <!-- Issues Section -->
-        <div class="attention-card">
-            <div class="attention-header">
-                <div class="attention-title-row">
-                    <span class="warning-icon">⚠️</span>
-                    <h3 class="attention-title">This needs your attention</h3>
+        <div class="card">
+            <div class="section-header">
+                <div class="section-header-left">
+                    <span class="section-icon">⚠️</span>
+                    <h3 class="section-title" style="margin-bottom: 0;">This needs your attention</h3>
                 </div>
-                <span class="top-complaints">Top Complaints</span>
+                <span class="section-subtitle">Top Complaints</span>
             </div>
             
             <div class="issue-item">
@@ -584,51 +465,51 @@
         </div>
 
         <!-- Positive Feedback -->
-        <div class="positive-card">
-            <div class="positive-header">
-                <div class="positive-title-row">
-                    <span class="positive-icon">😊</span>
-                    <h3 class="positive-main-title">What your customers love about you</h3>
+        <div class="card">
+            <div class="section-header">
+                <div class="section-header-left">
+                    <span class="section-icon">😊</span>
+                    <h3 class="section-title" style="margin-bottom: 0;">What your customers love about you</h3>
                 </div>
-                <span class="top-praises">Top Praises</span>
+                <span class="section-subtitle">Top Praises</span>
             </div>
 
             <div class="positive-item">
-                <div class="positive-item-header">
-                    <span class="positive-item-title">Cozy Ambiance and Interior</span>
+                <div class="issue-header">
+                    <span class="positive-title">Cozy Ambiance and Interior</span>
                     <span class="positive-badge">Mentioned 5 times</span>
                 </div>
-                <div class="positive-description">
+                <div class="issue-description">
                     Many customers praised the cafe's cozy, relaxing, and visually appealing atmosphere, creating a pleasant environment for dining.
                 </div>
             </div>
 
             <div class="positive-item">
-                <div class="positive-item-header">
-                    <span class="positive-item-title">Good Food Quality</span>
+                <div class="issue-header">
+                    <span class="positive-title">Good Food Quality</span>
                     <span class="positive-badge">Mentioned 5 times</span>
                 </div>
-                <div class="positive-description">
+                <div class="issue-description">
                     Burgers and pizza are most often praised by customers, along with exceptional coffee quality.
                 </div>
             </div>
 
             <div class="positive-item">
-                <div class="positive-item-header">
-                    <span class="positive-item-title">Friendly and Attentive Staff</span>
+                <div class="issue-header">
+                    <span class="positive-title">Friendly and Attentive Staff</span>
                     <span class="positive-badge">Mentioned 5 times</span>
                 </div>
-                <div class="positive-description">
+                <div class="issue-description">
                     Customers highlighted the polite, welcoming, and attentive service provided by the staff.
                 </div>
             </div>
         </div>
 
         <!-- Competition Section -->
-        <div class="competition-card">
-            <div class="competition-header">
-                <span class="search-icon">🔍</span>
-                <h3 class="competition-title">Competition found on google</h3>
+        <div class="card">
+            <div class="section-header-left">
+                <span class="section-icon">🔍</span>
+                <h3 class="section-title" style="margin-bottom: 16px;">Competition found on google</h3>
             </div>
 
             <div class="competitor-item">
@@ -673,10 +554,10 @@
         </div>
 
         <!-- Top Reviews -->
-        <div class="reviews-card">
-            <div class="reviews-header">
-                <span class="star-icon">⭐</span>
-                <h3 class="reviews-title">Top Reviews</h3>
+        <div class="card">
+            <div class="section-header-left">
+                <span class="section-icon">⭐</span>
+                <h3 class="section-title" style="margin-bottom: 16px;">Top Reviews</h3>
             </div>
 
             <div class="review-item">
@@ -728,7 +609,7 @@
 
             <h4 class="cta-subtitle">Why This Matters:</h4>
             <div class="cta-text">
-                95% of customers read reviews before buying. Poor negative reviews will cost 30% business loss every month. Customer feedback is a goldmine waiting to be unlocked. You just need to capture that customer's voice.
+                95% of customers read reviews before buying. Poor negative reviews will cost 30% business loss every month. Customer feedback is a goldmine waiting to be unlocked. You just need to capture the that customer's voice.
             </div>
 
             <div class="cta-final">

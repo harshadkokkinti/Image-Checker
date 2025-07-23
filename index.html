@@ -12,11 +12,13 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
             background-color: #f5f5f5;
             color: #000000;
             line-height: 1.4;
             font-size: 14px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
         .container {
@@ -42,7 +44,7 @@
         .logo-circle {
             width: 40px;
             height: 40px;
-            background: linear-gradient(135deg, #4285f4 0%, #34a853 50%, #ea4335 75%, #fbbc05 100%);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -50,6 +52,7 @@
             color: white;
             font-weight: 600;
             font-size: 20px;
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
         }
 
         .logo-text {
@@ -312,53 +315,54 @@
             line-height: 1.4;
         }
 
-        .cta-section {
-            background: #1a1a1a;
+        .info-box {
+            background: #ffffff;
             border-radius: 12px;
-            padding: 24px;
+            padding: 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             text-align: center;
-            margin-bottom: 20px;
         }
 
-        .cta-title {
+        .info-title {
             font-size: 18px;
             font-weight: 600;
-            color: #ffffff;
+            color: #000000;
             margin-bottom: 12px;
         }
 
-        .cta-description {
-            color: #cccccc;
+        .info-description {
+            color: #666666;
             font-size: 14px;
-            line-height: 1.4;
+            line-height: 1.5;
             margin-bottom: 20px;
         }
 
-        .cta-subtitle {
+        .info-subtitle {
             font-size: 16px;
             font-weight: 600;
-            color: #ffffff;
+            color: #000000;
             margin-bottom: 12px;
         }
 
-        .cta-text {
-            color: #cccccc;
+        .info-text {
+            color: #666666;
             font-size: 14px;
-            line-height: 1.4;
+            line-height: 1.5;
             margin-bottom: 20px;
         }
 
-        .cta-final {
-            color: #ffffff;
+        .info-final {
+            color: #000000;
             font-size: 14px;
             font-weight: 500;
             margin-bottom: 20px;
         }
 
         .cta-button {
-            background: #4285f4;
+            background: #007AFF;
             color: white;
-            padding: 14px 24px;
+            padding: 12px 24px;
             border: none;
             border-radius: 8px;
             font-weight: 600;
@@ -367,14 +371,42 @@
             width: 100%;
         }
 
-        .footer {
+        .footer-boxes {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .footer-box {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .footer-box-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 8px;
+        }
+
+        .footer-box-text {
+            color: #666666;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        .contact-info {
             text-align: center;
             color: #666666;
             font-size: 12px;
             line-height: 1.5;
         }
 
-        .footer-line {
+        .contact-line {
             margin-bottom: 4px;
         }
     </style>
@@ -427,7 +459,7 @@
         <div class="card">
             <div class="section-header">
                 <div class="section-header-left">
-                    <span class="section-icon">⚠️</span>
+                    <span class="section-icon">🚨</span>
                     <h3 class="section-title" style="margin-bottom: 0;">This needs your attention</h3>
                 </div>
                 <span class="section-subtitle">Top Complaints</span>
@@ -600,31 +632,31 @@
             </div>
         </div>
 
-        <!-- CTA Section -->
-        <div class="cta-section">
-            <h3 class="cta-title">What is Olly?</h3>
-            <div class="cta-description">
+        <!-- Info Section -->
+        <div class="info-box">
+            <h3 class="info-title">What is Olly?</h3>
+            <div class="info-description">
                 Olly is an AI GPT that has been trained manage online reputation by turning reviews into insights.
             </div>
 
-            <h4 class="cta-subtitle">Why This Matters:</h4>
-            <div class="cta-text">
+            <h4 class="info-subtitle">Why This Matters:</h4>
+            <div class="info-text">
                 95% of customers read reviews before buying. Poor negative reviews will cost 30% business loss every month. Customer feedback is a goldmine waiting to be unlocked. You just need to capture the that customer's voice.
             </div>
 
-            <div class="cta-final">
+            <div class="info-final">
                 This analysis barely scratches the surface of what's possible with Olly. Head to these features and get actionable insights.
             </div>
 
             <button class="cta-button">Join waitlist - Get Early Access</button>
         </div>
 
-        <!-- Footer -->
-        <div class="footer">
-            <div class="footer-line">Powered by Olly: How to...</div>
-            <div class="footer-line">Email: hello@olly.co</div>
-            <div class="footer-line">Website: www.olly.co</div>
-            <div class="footer-line">Discover our significant management tips and insights</div>
+        <!-- Footer Boxes -->
+        <div class="footer-boxes">
+            <div class="footer-box">
+                <div class="footer-box-title">Powered by Olly: How to...</div>
+                <div class="footer-box-text">Email: hello@olly.co<br>Website: www.olly.co<br>Discover our significant management tips and insights</div>
+            </div>
         </div>
     </div>
 </body>
